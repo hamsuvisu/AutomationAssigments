@@ -13,7 +13,7 @@ public class Assignment2Array {
 		
 	String [] [] [] products = new String [2] [4] [5];
 	products[0][0][0] = "Cola";
-	products[0][0][1] = "Orange Juice";
+	products[0][0][1] = "Orange Juice"; 
 	products[0][1][0] = "Popcorn";
 	products[0][2][1] = "Heavy Cream";
 	products[1][0][0] = "Cola";
@@ -22,7 +22,8 @@ public class Assignment2Array {
 	
 	System.out.println(products[1][3][0]);
 	
-		
+	String[][] data = {{"ABC","123"}, {"XYZ","234"},{"CDF","567"}};
+	System.out.println(data[2][0]);
 	}
 
 }
