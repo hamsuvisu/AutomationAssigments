@@ -68,12 +68,13 @@ public class AdvanceCssSelector {
 // 		16. Locate the WebElement Forgot log in   and Register 'cssSelector' Locator
 		
 		driver.findElement(By.cssSelector("a[href='lookup.htm']"));
+		driver.findElement(By.linkText("lookup"));
 		driver.findElement(By.cssSelector("a[href='register.htm']"));
+		driver.findElement(By.linkText("register"));
 		
 // 		17. Locate the WebElement ATM Service 'cssSelector' Locator
 //		17 Atm Services a)Withdraw Funds b) TransferFunds C) Check Balance D) Make Deposit
 		
-		driver.findElement(By.cssSelector("ul[class='services'] > li:nth-child(1)"));  // ATM service
 		driver.findElement(By.cssSelector("ul[class='services'] > li:nth-child(2) >a")); //Withdraw Funds
 		driver.findElement(By.cssSelector("ul[class='services'] > li:nth-child(3) >a")); //TransferFunds
 		driver.findElement(By.cssSelector("ul[class='services'] > li:nth-child(4) >a")); //Check Balance
@@ -104,6 +105,23 @@ public class AdvanceCssSelector {
 		driver.findElement(By.cssSelector("div[id='footerPanel']>ul>li:nth-child(6) >a")); // Forum
 		driver.findElement(By.cssSelector("div[id='footerPanel']>ul>li:nth-child(7) >a")); // Site Map
 		driver.findElement(By.cssSelector("div[id='footerPanel']>ul>li:nth-child(8) >a")); // Contact Us
+		
+//		22. UserName and Password	text field	
+		
+		driver.findElement(By.name("username"));
+		driver.findElement(By.cssSelector("input[name='username']"));
+		driver.findElement(By.cssSelector("input[type='text']"));
+		driver.findElement(By.cssSelector("[type='text']"));
+		driver.findElement(By.cssSelector("[name='username']"));
+		
+		driver.findElement(By.name("password"));
+		driver.findElement(By.cssSelector("input[name='password']"));
+		driver.findElement(By.cssSelector("input[type='password']"));
+		driver.findElement(By.cssSelector("[name='password']"));
+		driver.findElement(By.cssSelector("[type='password']"));
+		
+		
+		
 		
 		
 		
