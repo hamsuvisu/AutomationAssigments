@@ -67,10 +67,9 @@ public class AdvanceCssSelector {
 	
 // 		16. Locate the WebElement Forgot log in   and Register 'cssSelector' Locator
 		
-		driver.findElement(By.cssSelector("a[href='lookup.htm']"));
-		driver.findElement(By.linkText("lookup"));
-		driver.findElement(By.cssSelector("a[href='register.htm']"));
-		driver.findElement(By.linkText("register"));
+		
+		driver.findElement(By.linkText("Forgot login info"));
+		driver.findElement(By.linkText("Register"));
 		
 // 		17. Locate the WebElement ATM Service 'cssSelector' Locator
 //		17 Atm Services a)Withdraw Funds b) TransferFunds C) Check Balance D) Make Deposit
@@ -94,6 +93,7 @@ public class AdvanceCssSelector {
 //	    20. ReadMore (duplicate) with two web elements
 		driver.findElement(By.cssSelector("p[class='more']>a"));
 		driver.findElement(By.cssSelector("div[id='rightPanel'>p[class='more']>a"));
+		driver.findElement(By.linkText("Read More"));
 		
 //      21.Footer a)Home b)About US c)Services d) Products e)Locations f) Forum g) Site Map h) Contact Us
 		
