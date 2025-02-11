@@ -6,7 +6,7 @@ public class Assignment15 {
 
 		print2charword("I Love Dogs");
 		palindrome("race a car"); // "A man, a plan, a canal: Panama"
-
+		palindrome("A man, a plan, a canal: Panama");
 	}
 
 	public static void print2charword(String input) {
@@ -15,12 +15,13 @@ public class Assignment15 {
 		// same letter
 		System.out.println(
 				"\n Print All 2 Letter word combinations from this and 2 chars should not have same letter \n");
-		String input1 = input.substring(0).toLowerCase(); // lowercase
+		String input1 = input.toLowerCase(); // lowercase
 		String input2 = input1.replaceAll("[^a-zA-Z]", ""); // cleaning up data without space
 		for (int i = 0; i < input2.length(); i++) {
-			for (int j = i + 1; j < input2.length(); j++) {
+			for (int j = i+1; j < input2.length(); j++) {
 				if (input1.charAt(i) != input2.charAt(j)) { // condition to check no repeated character
 					System.out.println(input2.charAt(i) + " " + input2.charAt(j));
+					System.out.println(input2.charAt(j) + " " + input2.charAt(i));
 				}
 			}
 		}
@@ -30,7 +31,7 @@ public class Assignment15 {
 		// Given a string s, return true if it is a palindrome, or false otherwise.
 		System.out.println("\n *******Palindrome***********");
 		String input1 = input.replaceAll("[^a-zA-Z0-9]", ""); // cleaning up data without space and Special character
-		String input2 = input1.substring(0).toLowerCase(); // lowercase
+		String input2 = input1.toLowerCase(); // lowercase
 		String reverse = "";
 		boolean flag = true;
 		for (int i = input2.length() - 1; i >= 0; i--) { // reading the character from last
@@ -43,10 +44,12 @@ public class Assignment15 {
 			flag = true;
 			System.out.println("Output  :" + flag);
 			System.out.println("Explanation  :\"" + input2 + "\" is a palindrome");
+			System.out.println("Explanation  :\"" + input2 + "\" is a palindrome");
 		} else {
 			flag = false;
 			System.out.println("Output :" + flag);
 			System.out.print("Explanation  :\"" + input2 + "\" is not a palindrome");
+			System.out.println("Explanation  :\"" + input2 + "\" is a palindrome");
 		}
 	}
 

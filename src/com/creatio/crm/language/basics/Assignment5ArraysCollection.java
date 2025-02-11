@@ -24,6 +24,7 @@ public class Assignment5ArraysCollection {
 	public static void main(String[] args) {
 		
 		// 1.Creating a List if Top 5 Most Populated Countries in the World
+		
 		System.out.println("*************** ArrayList ***************");
 		List<String> topPopulatedCountries = new ArrayList<>();
 		topPopulatedCountries.add("India");
@@ -31,9 +32,14 @@ public class Assignment5ArraysCollection {
 		topPopulatedCountries.add("United States");
 		topPopulatedCountries.add("Indonesia");
 		topPopulatedCountries.add("Pakistan");
+		System.out.println("Top 5 Most Populated Countries in the World");
+		for (int i=0;i<topPopulatedCountries.size();i++) {
+			
+			System.out.println(topPopulatedCountries.get(i));
+		}
 		
 		// Displaying second populated country from the given List.
-		System.out.println("Displaying second populated country in the world :"+topPopulatedCountries.get(1));
+		System.out.println("\nDisplaying second populated country in the world :"+topPopulatedCountries.get(1));
 		//Another way of Adding values to Array List.
 		
 		List<String> topPopulatedCountries1 =new ArrayList<>( Arrays.asList("India","China","United States","Indonesia"));
@@ -42,7 +48,7 @@ public class Assignment5ArraysCollection {
 		// Displaying Fifth country from the given List.
 		
 		System.out.println("Displaying Fifth populated country in the world :"+topPopulatedCountries1.get(4));
-	
+		
 	   
 		
 		//2. Creating a set of the top 10 most visited tourist attractions in the world and print out its size.
@@ -76,15 +82,22 @@ public class Assignment5ArraysCollection {
 		  uspoptncities.put("Chicago","2,746,388");
 		  uspoptncities.put("Houston","2,304,580");
 		  uspoptncities.put("Phoenix","1,608,139");
+		  for(Map.Entry<String,String> entry: uspoptncities.entrySet()) {
+			  System.out.println(entry.getKey()+":"+entry.getValue());
+		  }
+			  
 		  
 		  //Displaying 2nd Populated City in the US
 		  
 		  System.out.println("Displaying 2nd Populated City in the US:"+uspoptncities.get("Los Angeles"));
+		  System.out.println("Displaying 2nd Populated City in the US:"+uspoptncities);
+		  
 		  
 		  //4.Create an array of 10 random integers and print out the sum of 3rd and 5th Value.
 		  
 		  System.out.println("\n\n***************Array ***************");
 		  //Creating an array of 10 random integer
+		  
 		  
 		  int[] num = {4,112,55,44,88,77,789,11,789};
 		  

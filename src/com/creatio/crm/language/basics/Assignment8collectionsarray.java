@@ -32,8 +32,8 @@ public class Assignment8collectionsarray {
 					double exp=empData.get(key)[1];
 					double baseSalary =empData.get(key)[0];
 					double hike ;
-					int variablePay;
-					int bonus;
+					int variablePay = 0;
+					int bonus = 0;
 					int reward;
 					double hikepercentage;
 
@@ -53,11 +53,11 @@ public class Assignment8collectionsarray {
 							 variablePay=3;
 							 bonus=300;
 							 }
-						 else
-						 {
-							 variablePay=0;
-							 bonus=0;
-						 }
+						// else
+						// {
+							// variablePay=0;
+							// bonus=0;
+						// }
 					if (exp>=5) 
 						 reward=5000;
 					 else 
@@ -71,10 +71,11 @@ public class Assignment8collectionsarray {
 					 hikePercentages.put(key, hikepercentage);
 					 				 
 				}
-				for(Map.Entry<String,Double> entry: hikePercentages.entrySet() )
-				{
-					System.out.println(entry.getKey() + ": " + entry.getValue()+"%" );
-				}
+			//	for(Map.Entry<String,Double> entry: hikePercentages.entrySet() )
+			//	{
+				//	System.out.println(entry.getKey() + ": " + entry.getValue()+"%" );
+					System.out.println(hikePercentages );
+				//}
 				
 
 			}

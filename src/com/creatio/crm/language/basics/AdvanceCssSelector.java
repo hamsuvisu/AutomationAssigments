@@ -120,6 +120,7 @@ public class AdvanceCssSelector {
 		driver.findElement(By.cssSelector("[name='password']"));
 		driver.findElement(By.cssSelector("[type='password']"));
 		
+		ul[class='visit']>li>a
 		
 		
 		
